@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h">COFFEE HOUSE</h1>
+    </header>
+
+    <section class="order-menu">
+        <div class="order-menu__client">
+            <input type="text" name="surname" class="text-input" placeholder="Введите Фамилию">
+            <input type="text" name="name" class="text-input" placeholder="Введите Имя">
+        </div>
+        <div class="catalog">
+            <div class="item item-1-1">
+                <label class="item__label">
+                    <input type="checkbox" onchange="onCheckboxEvent(this)" class="checkbox" value="80">
+                    <div class="checkmark"></div>
+                    Эспрессо 80р.
+                </label>
+                <input class="item__number" type="text" onblur="onNumberInput(this)" disabled="true" value="0">
+            </div>
+            <div class="item item-1-2">
+                <label class="item__label">
+                    <input type="checkbox" onchange="onCheckboxEvent(this)" class="checkbox" value="110">
+                    <div class="checkmark"></div>
+                    Латте 110р.
+                </label>
+                <input class="item__number" type="text" onblur="onNumberInput(this)" disabled="true" value="0">
+            </div>
+            <div class="item item-1-3">
+                <label class="item__label">
+                    <input type="checkbox" onchange="onCheckboxEvent(this)" class="checkbox" value="120">
+                    <div class="checkmark"></div>
+                    Капучино 120р.
+                </label>
+                <input class="item__number" type="text" onblur="onNumberInput(this)" disabled="true" value="0">
+            </div>
+            <div class="item item-1-4">
+                <label class="item__label">
+                    <input type="checkbox" onchange="onCheckboxEvent(this)" class="checkbox" value="90">
+                    <div class="checkmark"></div>
+                    Американо 90р.
+                </label>
+                <input class="item__number" type="text" onblur="onNumberInput(this)" disabled="true" value="0">
+            </div>
+
+            <div class="item item-2-1">
+                <label class="item__label">
+                    <input type="checkbox" onchange="onCheckboxEvent(this)" class="checkbox" value="80">
+                    <div class="checkmark"></div>
+                    Шоколадный кекс 80р.
+                </label>
+                <input class="item__number" type="text" onblur="onNumberInput(this)" disabled="true" value="0">
+            </div>
+            <div class="item item-2-2">
+                <label class="item__label">
+                    <input type="checkbox" onchange="onCheckboxEvent(this)" class="checkbox" value="90">
+                    <div class="checkmark"></div>
+                    Черничный кекс 90р.
+                </label>
+                <input class="item__number" type="text" onblur="onNumberInput(this)" disabled="true" value="0">
+            </div>
+            <div class="item item-2-3">
+                <label class="item__label">
+                    <input type="checkbox" onchange="onCheckboxEvent(this)" class="checkbox" value="100">
+                    <div class="checkmark"></div>
+                    Яблочный тарт 100р.
+                </label>
+                <input class="item__number" type="text" onblur="onNumberInput(this)" disabled="true" value="0">
+            </div>
+        </div>
+        <div class="menu-cost">
+            <p class="menu-cost__p">Итого: 0р.</p>
+        </div>
+        <btn class="menu-btn" onclick="makeOrder(this)">Оформить заказ</btn>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
